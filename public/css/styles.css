@@ -196,3 +196,37 @@ body{
 }
 
 /*LISTA FIM*/
+
+/* Todo Toolbar */
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    
+  }
+  
+  #toolbar h4 {
+    
+  }
+  
+  #search {
+    
+  }
+  
+  #search form {
+    
+  }
+  
+  #search input {
+    width: 100%;
+    
+  }
+  
+  #filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #filter select {
+    flex: 1;
+  }
