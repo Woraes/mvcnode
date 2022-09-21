@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-body">
+   <h2>Editando a tarefa : {{task.titulo}}</h2>
+  </div>
+  <form action="/tasks/update" method="post">
+  <input type="hidden" name="id" value="{{task.id}}">
+    <div class="form-control">
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" placeholder="O que deseja fazer ..." value="{{task.titulo}}">
+    </div>
+     <div class="form-control">
+        <label for="descricao">Descrição:</label>
+      <textarea name="descricao" id="" placeholder="Descreva a Tarefa...">{{task.descricao}}</textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Editar</button>
+   <a class="btn btn-dark" href="/tasks/all">Cancelar</a>
+  </form>
+  
+</div>

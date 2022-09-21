@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-body">
+   <h2>Lista de Tarefas</h2>
+  </div>
+    <ul class="lista">
+        {{#each tasks}}
+        <li>
+            {{#if this.done}}
+           <a href="/" class="title done">{{this.titulo}} <i class="bi bi-check">Concluida</i></a>
+           {{else}}
+           <a href="/" class="title">{{this.titulo}}  </a>
+           {{/if}}
+           <div class="actions">
+            <form action="/tasks/updatestatus" method="post">
+            <input type="hidden" name="id" value="{{this.id}}">
+            <input type="hidden" name="done" value="{{this.done}}">
+            <button id="status" class="btn btn-primary">
+                <i class="bi bi-check"></i>
+            </button>
+            </form>
+            
+            <a href="/tasks/update/{{this.id}}" class="btn btn-primary" ><i class="bi bi-pencil-square"></i></a>
+            <form action="/tasks/remove" method="post">
+            <input type="hidden" name="id" value="{{this.id}}">
+            <button class="btn btn-primary" type="submit">
+                <i class="bi bi-x-lg"></i>
+                </button>
+            </form>
+            
+           </div>
+        </li>
+        {{/each}}
+
+
+    </ul>
+  
+</div>
+<a class="btn btn-primary" href="/">Voltar</a>

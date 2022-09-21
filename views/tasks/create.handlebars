@@ -1,5 +1,18 @@
 <div class="card">
   <div class="card-body">
-   <h2>Criar Tarefa</h2>
+   <h2>Criando Tarefa</h2>
   </div>
+  <form action="/tasks/add" method="post">
+    <div class="form-control">
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" placeholder="O que deseja fazer ..." required>
+    </div>
+     <div class="form-control">
+        <label for="descricao">Descrição:</label>
+      <textarea name="descricao" id="" placeholder="Descreva a Tarefa..."></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Salvar</button>
+   <a class="btn btn-dark" href="/">Cancelar</a>
+  </form>
+  
 </div>

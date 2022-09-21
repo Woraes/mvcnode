@@ -1,14 +1,35 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar{
+    border-bottom: 1px solid #ccc;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dropdown-menu{
+    background-color: rgb(136, 217, 228);
+    opacity: 88%;
 }
 
 h1, h2{
     text-align: center;
+    font-weight: bold;
+    opacity: 75%;
 }
 
 form{
     width: 450px;
     margin: 0 auto;
+    
 }
 
 body{
@@ -28,6 +49,22 @@ body{
     padding: 8px;
     margin-bottom: 5px;
     background-color: rgb(47, 178, 230);
+
+}
+
+.card-body{
+    border: 2px solid rgb(255, 255, 255);
+    
+    margin-bottom: 2em;
+    border-radius: 7px;
+}
+
+.card-container{
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: rgb(47, 178, 230);
+    border: 3px solid;
+    
 
 }
 
@@ -66,3 +103,96 @@ body{
 }
 
 
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-checkbox{
+    flex-direction: row;
+}
+
+
+.form-control input,
+.form-control textarea{
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+ /*LISTA*/
+.lista{
+    list-style: none;
+    margin-top: 1em;
+    
+}
+
+.lista li{
+    padding: .5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.lista .title{
+    font-weight: bold;
+    color: aliceblue;
+    transition: 4s;
+    font-size: 1.2em;
+    text-decoration: none;
+
+}
+.lista .title:hover{
+    color: black;
+}
+
+.actions{
+    display: flex;
+    margin-right: -25em;
+    padding: 5px;
+    
+   
+}
+
+.actions a{
+    margin-right: 5px;
+   
+}
+#status{
+    margin-left: 404px;
+    
+   
+}
+
+.actions i{
+    font-size: 1em;
+   
+    color: rgb(255, 255, 255);
+    
+}
+
+.actions i:hover{
+    color: black;
+    
+    
+    font-size: 1.2em;
+    
+}
+
+.title.done{
+    text-decoration: line-through;
+    color: rgb(119, 117, 117);
+    opacity: 62%;
+
+}
+
+/*LISTA FIM*/
